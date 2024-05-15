@@ -142,13 +142,32 @@ img {
  /* Mobile */
  @media screen and (max-width: 480px) {
 
+    /* eliminato il flex */
     .row{
         display: block;
     }
 
-    .lessons .col{
+    /* Modifica delle grandezze e margini delle colonne delle sezioni: Lessons - Steps - Why Us solo colonna sinistra */
+    .lessons .col, .steps .col, .why-us .col-left{
         width:100%;
         margin-bottom: 50px;
+    }
+
+    /* modifica colonna destra Why Us Section */
+    .why-us .col-right {
+        width: 100%;
+      }
+    
+    /* modifica sfondo margini e padding del Why Us section */
+    .why-us{
+        background-color: #222222;
+        padding: 3rem 0;
+        margin-bottom: 0;
+    }
+
+    /* eliminazione margin botton della sezione sovrastante la Why Us */
+    .steps{
+        margin-bottom: 0;
     }
     
  }
